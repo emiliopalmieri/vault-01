@@ -21,4 +21,4 @@ spec:
       volumes:
         - name: nginx-secret
           secret:
-            secretName: my-secret # name of the Secret
+            secretName: nginx-secret-dev
