@@ -10,7 +10,7 @@ secretGenerator:
   - name: nginx-secret
     type: Opaque
     files:
-      - secret.properties
+      - sealed_secrets.json
 
 resources:
   - ../../base
