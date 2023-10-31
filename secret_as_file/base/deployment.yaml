@@ -16,9 +16,9 @@ spec:
       - image: nginx
         name: nginx
         volumeMounts:
-        - name: secret-volume
+        - name: nginx-secret
           mountPath: /etc/secrets
       volumes:
-        - name: secrets-volume
+        - name: nginx-secret
           secret:
             secretName: my-secret # name of the Secret
