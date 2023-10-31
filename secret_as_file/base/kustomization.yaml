@@ -7,4 +7,5 @@ commonLabels:
   app: nginx
 
 resources:
+  - service.yaml
   - deployment.yaml

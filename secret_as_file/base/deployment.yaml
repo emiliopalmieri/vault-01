@@ -19,6 +19,6 @@ spec:
         - name: secret-volume
           mountPath: /etc/secrets
       volumes:
-        - name: secrets-files
+        - name: secrets-volume
           secret:
             secretName: my-secret # name of the Secret
