@@ -9,8 +9,7 @@ commonLabels:
 secretGenerator:
   - name: nginx-secret
     type: Opaque
-    files:
-      - sealed_secrets.json
+    env: sealedsecrets.yaml
 
 resources:
   - ../../base

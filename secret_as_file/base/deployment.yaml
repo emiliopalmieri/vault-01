@@ -15,10 +15,6 @@ spec:
       containers:
       - image: nginx
         name: nginx
-        volumeMounts:
-        - name: nginx-secret
-          mountPath: /etc/secrets
-      volumes:
-        - name: nginx-secret
-          secret:
-            secretName: nginx-secret-dev
+        envFrom:
+          - secretRef:
+              name: nginx-secret
