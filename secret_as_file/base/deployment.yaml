@@ -15,6 +15,10 @@ spec:
       containers:
       - image: nginx
         name: nginx
-        envFrom:
-          - secretRef:
-              name: nginx-secret
+        volumeMounts:
+        - name: nginx-secret
+          mountPath: /etc/secrets
+      volumes:
+        - name: nginx-secret
+          secret:
+            secretName: nginx-secret
