@@ -6,10 +6,5 @@ nameSuffix: -dev
 commonLabels:
   app: nginx-dev
 
-secretGenerator:
-  - name: nginx-secret
-    type: Opaque
-    env: sealedsecrets.yaml
-
 resources:
   - ../../base
