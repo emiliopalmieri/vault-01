@@ -7,4 +7,5 @@ commonLabels:
   app: nginx-dev
 
 resources:
+  - sealedsecrets.yaml
   - ../../base
